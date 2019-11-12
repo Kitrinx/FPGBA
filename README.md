@@ -27,18 +27,21 @@ Out of scope:
 
 # Status: 
 
+176 games tested until ingame:
+- 169 without major issues (no crash, playable)
+- about 10% still with graphical issues, mostly due to incorrect timing
+
 VHDL:
-- CPU done, some bugs probably still left
-- Graphic mostly implemented (affine Sprites and Bitmap working already!)
-- Sound mostly implemented
+- CPU done
+- Graphic fully implemented
+- Sound fully implemented
 - Turbomode working but with large graphical glitches
-- saving with EEPROM ok
+- saving with EEPROM/SRam/FLASH ok
 - all registers implemented
 
 Missing big parts:
-- affine Tilemaps -> Mode 7, e.g. Mario Kart
-- Waveram Audiochannel only has one bank as in old GBC
-- FLASH-save is implemented but not working yet
+- Gamepak Prefetch
+- Timing accuracy. Currently about 50% Tests passed (about as good as VBA-M)
 
 Software model, cyclebased Emulator in C#:
 - all features done
@@ -47,8 +50,6 @@ Software model, cyclebased Emulator in C#:
 -> considered complete for now, can be used as "known good" for 99%.
 
 # FPGA Ressource usage (GBA only)
-- 28500 LE (LUTS+FF), 8500 CPU, 6000 GPU
-- 2Mbit Ram -> WRAM fast, VRAM, Palette, OAM, Framebuffer
+- 25500 LE (LUTS+FF), 9000 CPU, 7500 GPU
+- 2Mbit Ram used for WRAM fast, VRAM, Palette, OAM, Framebuffer
 - WRAM Slow, Gamepak and Saves(EEPROM, SRAM, Flash) are on SDRam.
-
-Next update: soon
