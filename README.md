@@ -95,16 +95,16 @@ so the core has some time to compensate if the game is doing things that the cor
 As the core is on average 2x as fast, this usually is enough and 100 cycles is not noticable.
 This is below 0.001% of speed jitter and below 0.3% even for single sound samples.
 
-However, it still has the advantages I request from an FPGA implementation:
+However, it still has the advantages of an FPGA implementation:
 - zero additional input latency
 - steady output without any flicker, tearing, delay
 - low power standalone device
 
-# Bios:
+# BIOS:
 
-The Bios is NOT provided in the repo obviously. Instead there is a script to convert the bios to the VHDL module.
-You need to provide the Bios yourself or use the one checked in, which is opensource. 
-However, this opensource-Bios will crash in the test, so it's unsure how good it is.
+The BIOS is NOT provided in the repo obviously. Instead there is a script to convert the bios to the VHDL module.
+You need to provide the BIOS yourself or use the one checked in, which is opensource. 
+However, this opensource-BIOS will crash in the test, so it's unsure how good it is.
 
 # Open Bugs/Features
 
