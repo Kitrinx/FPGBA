@@ -1,0 +1,1 @@
+.\..\lua\luajit.exe gbabios.lua

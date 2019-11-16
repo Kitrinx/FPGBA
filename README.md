@@ -105,6 +105,7 @@ However, it still has the advantages of an FPGA implementation:
 The BIOS is NOT provided in the repo obviously. Instead there is a script to convert the bios to the VHDL module.
 You need to provide the BIOS yourself or use the one checked in, which is opensource. 
 However, this opensource-BIOS will crash in the test, so it's unsure how good it is.
+All credit goes to Normmatt.
 
 # Open Bugs/Features
 
